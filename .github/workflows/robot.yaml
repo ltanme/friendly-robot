@@ -33,5 +33,8 @@ jobs:
     - name: 'Working'
       env:
         DA_NAO_WX_ROBOT: ${{ secrets.DA_NAO_WX_ROBOT }}
-      run: python ./wxwork.py
+        TZ: Asia/Shanghai
+      run: |
+        export TZ='Asia/Shanghai'
+        python ./wxwork.py
        
