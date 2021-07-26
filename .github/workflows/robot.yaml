@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       env:
-        DA_NAO_WX_ROBOT:${{secrets.DA_NAO_WX_ROBOT}}
+        DA_NAO_WX_ROBOT: ${{ secrets.DA_NAO_WX_ROBOT }}
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
