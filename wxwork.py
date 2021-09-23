@@ -18,5 +18,5 @@ if __name__ == '__main__':
     headers = {
         'Content-Type': "application/json",
     }
-    response = requests.request("POST", url, data=payload, headers=headers)
-    print(response.text)
+    # response = requests.request("POST", url, data=payload, headers=headers)
+    # print(response.text)
